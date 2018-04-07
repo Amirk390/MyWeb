@@ -14,6 +14,29 @@ p {
   border: none;
   border-top: 0.1rem white dashed; }
 
+.projcts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 75%;
+  margin-top: 1rem; }
+  .projcts div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .projcts div p {
+      font-family: "Raleway", sans-serif;
+      font-weight: bold;
+      margin-bottom: 0.5rem; }
+
+img {
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.5);
+  margin: 0 2rem;
+  width: 5rem;
+  height: 5rem; }
+
 ul {
   font-family: "Raleway", sans-serif;
   display: flex;
@@ -28,5 +51,20 @@ ul {
   ul a {
     text-decoration: none;
     color: black; }
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Raleway", sans-serif; }
+  .aboutMe h1 {
+    font-size: 14px;
+    margin-bottom: 0; }
+  .aboutMe h2 {
+    font-size: 12px;
+    margin-top: 0; }
+  .aboutMe p {
+    font-size: 12px;
+    margin: 0.25rem; }
 
 /*# sourceMappingURL=style.css.map */

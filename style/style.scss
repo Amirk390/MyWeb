@@ -1,4 +1,4 @@
-$navbar-text: 'Raleway', sans-serif;
+$fancy-text: 'Raleway', sans-serif;
 $normal-text: 'Source Sans Pro', sans-serif;
 
 body {
@@ -19,8 +19,35 @@ p {
   border-top: 0.1rem white dashed;
 }
 
+.projcts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 75%;
+  margin-top: 1rem;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      font-family: $fancy-text;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+img {
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.5);
+  margin: 0 2rem;
+  width: 5rem;
+  height: 5rem;
+}
+
 ul {
-  font-family: $navbar-text;
+  font-family: $fancy-text;
   display: flex;
   font-size: 8px;
   justify-content: center;
@@ -34,5 +61,29 @@ ul {
   a {
     text-decoration: none;
     color: black;
+  }
+}
+
+// about me page
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $fancy-text;
+
+  h1 {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 10px;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: 12px;
+    margin: 0.25rem;
   }
 }
