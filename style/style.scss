@@ -1,0 +1,43 @@
+$navbar-text: 'Jua', sans-serif;
+$normal-text: 'Source Sans Pro', sans-serif;
+
+body {
+  font-family: $navbar-text;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    font-family: $normal-text;
+    color: white;
+  }
+  p {
+    color: white;
+    font-family: $normal-text;
+  }
+}
+
+#rectangle {
+  width: 30rem;
+  border: none;
+  border-top: 0.1rem white dashed;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  width: 95%;
+  li {
+    font-weight: bold;
+    color: white;
+    display: block;
+    margin: 0 2.5rem;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
