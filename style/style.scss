@@ -4,6 +4,7 @@ $fancy-text: 'Ubuntu', sans-serif;
 html {
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 
 body {
@@ -26,6 +27,9 @@ body {
   background-color: rgba(0, 102, 102, 0.85);
   width: 100%;
   height: 100%;
+  @media (max-width: 375px) {
+    padding-top: 1rem;
+  }
 }
 .body {
   position: absolute;
@@ -67,6 +71,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+
     p {
       font-family: $fancy-text;
       font-weight: bold;
@@ -76,6 +81,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 0rem;
   }
 }
 
@@ -86,12 +92,18 @@ img {
   margin: 0 2rem;
   width: 5rem;
   height: 5rem;
+  @media (max-width: 375px) {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 0rem;
+    border-radius: 5px;
+  }
 }
 
 ul {
   font-family: $fancy-text;
   display: flex;
-  font-size: 8px;
+  font-size: 20px;
   justify-content: center;
   padding: 0;
   @media (max-width: 375px) {
