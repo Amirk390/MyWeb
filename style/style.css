@@ -1,18 +1,54 @@
+html {
+  padding: 0;
+  margin: 0; }
+
 body {
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  background: url("../assets/landscape.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.InnerBody {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
-  font-family: "Source Sans Pro", sans-serif;
-  color: black; }
+  padding-top: 5rem;
+  background-color: rgba(0, 102, 102, 0.85);
+  width: 100%;
+  height: 100%; }
+
+.body {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0%;
+  background-color: rgba(4, 47, 47, 0.85);
+  width: 100%;
+  height: 100%; }
+
+h1 {
+  font-size: 44px;
+  margin-bottom: 0.25rem; }
+  @media (max-width: 375px) {
+    h1 {
+      font-size: 24px; } }
+
+h2 {
+  margin-top: 0rem;
+  font-size: 24px;
+  color: #041a4e; }
 
 p {
-  font-size: 14px; }
-
-#rectangle {
-  width: 30rem;
-  border: none;
-  border-top: 0.1rem white dashed; }
+  font-size: 14px;
+  text-align: center; }
 
 .projcts {
   display: flex;
@@ -26,8 +62,12 @@ p {
     align-items: center; }
     .projcts div p {
       font-family: "Raleway", sans-serif;
-      font-weight: bold;
-      margin-bottom: 0.5rem; }
+      font-weight: bold; }
+  @media (max-width: 375px) {
+    .projcts {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }
 
 img {
   border-radius: 15px;
@@ -42,15 +82,20 @@ ul {
   display: flex;
   font-size: 8px;
   justify-content: center;
-  align-items: center;
-  margin-bottom: 2.5rem; }
+  padding: 0; }
+  @media (max-width: 375px) {
+    ul {
+      font-size: 14px; } }
   ul li {
     font-weight: lighter;
     display: block;
     margin: 0 2.5rem; }
+    @media (max-width: 375px) {
+      ul li {
+        margin: 0 1rem; } }
   ul a {
     text-decoration: none;
-    color: black; }
+    color: white; }
 
 .aboutMe {
   display: flex;
@@ -62,7 +107,11 @@ ul {
     margin-bottom: 0; }
   .aboutMe h2 {
     font-size: 12px;
-    margin-top: 0; }
+    margin: 0.25rem 0.83em; }
+  .aboutMe h3 {
+    font-size: 14px; }
+  .aboutMe .lastSuTitle {
+    margin-bottom: 1rem; }
   .aboutMe p {
     font-size: 12px;
     margin: 0.25rem; }
