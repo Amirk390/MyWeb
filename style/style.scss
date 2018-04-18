@@ -1,5 +1,5 @@
-$fancy-text: 'Raleway', sans-serif;
-$normal-text: 'Source Sans Pro', sans-serif;
+$normal-text: 'Raleway', sans-serif;
+$fancy-text: 'Ubuntu', sans-serif;
 
 html {
   padding: 0;
@@ -47,9 +47,10 @@ h1 {
   }
 }
 h2 {
+  font-family: $fancy-text;
   margin-top: 0rem;
   font-size: 24px;
-  color: rgba(4, 26, 78, 1);
+  color: rgba(62, 148, 148, 1);
 }
 p {
   font-size: 14px;
